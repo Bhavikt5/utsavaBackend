@@ -1,0 +1,84 @@
+.therapy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "poppins", sans-serif;
+  letter-spacing: 1.1;
+}
+
+.therapyHeading {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.therapyHeading h3 {
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #222222;
+}
+
+.therapyHeading p {
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #333333;
+  margin: 30px 0;
+  text-transform: none;
+}
+
+.therapyContent {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 70px;
+  width: 100%;
+}
+
+.therapyImg {
+  padding: 20px;
+  width: 650px;
+  height: auto;
+}
+
+.therapyImg img {
+  width: 100%;
+}
+
+.therapyContent-1 {
+  width: 650px;
+  padding: 20px;
+}
+
+.therapyContent-1 h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.therapyP {
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #333333;
+  margin-bottom: 25px;
+  text-transform: none;
+}
+
+.therapyP-1 {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #333333;
+  line-height: 2;
+  margin-bottom: 25px;
+  text-transform: none;
+}
+
+.therapyContent2 {
+  flex-wrap: wrap-reverse;
+}
+
+@media (max-width: 400px) {
+  .therapyContent {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,84 @@
+.sidebar {
+  background-color: rgb(255, 255, 255);
+  padding: 4rem 20px;
+}
+
+.sidebar > a:first-child {
+  padding: 0;
+  margin: auto;
+  height: 20px;
+}
+.sidebar > a > img {
+  height: 100px;
+  width: auto;
+  transition: all 0.5s;
+  margin-bottom: 2rem;
+}
+
+.sidebar > a > img:hover {
+  filter: drop-shadow(0 0 10px tomato);
+}
+.sidebar a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.493);
+  font: 200 1rem "Roboto";
+  transition: all 0.5s;
+}
+
+.sidebar .productLink {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.493);
+  font: 200 1rem "Roboto";
+  transition: all 0.5s;
+  margin-bottom: 20px;
+}
+
+.sidebar .productLink:hover {
+  color: tomato;
+  transform: scale(1.1);
+}
+
+.MuiTreeItem-label {
+  margin: 10px;
+  background-color: none;
+}
+
+.sidebar a:hover {
+  color: tomato;
+  transform: scale(1.1);
+}
+
+.sidebar a > P {
+  display: flex;
+  align-items: center;
+}
+.sidebar a > p > svg {
+  margin-right: 0.5rem;
+}
+
+.MuiTypography-root {
+  background-color: #fff !important;
+}
+
+@media (max-width: 600px) {
+  .sidebar > a > .sidebarImg {
+    width: 150px;
+  }
+
+  .sidebar > a:first-child {
+    margin: auto;
+  }
+
+  .sidebar > a {
+    padding: 0 0 0 25px;
+  }
+
+  .sidebar > .productLink {
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+
+  .sidebar > .productLink:hover {
+    color: #888888;
+  }
+}

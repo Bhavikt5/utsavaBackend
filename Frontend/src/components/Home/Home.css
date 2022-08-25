@@ -1,0 +1,145 @@
+.product {
+  background-color: white;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.homeHeading {
+  font-family: "Roboto";
+  font-size: 2.5rem;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.categoryHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 150px 0px;
+}
+
+.categoryHeading > .Btn {
+  text-decoration: none;
+  height: 50px;
+}
+
+.categoryHeading > .Btn:hover {
+  color: white;
+}
+
+.container {
+  display: flex;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.productCard {
+  width: 14vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax;
+}
+
+.productCard > a > img {
+  width: 14vmax;
+}
+
+.productCard > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.productCardSpan {
+  margin: 0.5vmax;
+  font: 300 0.7vmax "Roboto";
+}
+
+.productCard > a {
+  text-decoration: none;
+}
+
+.productCard > a > p {
+  font-family: "Roboto";
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  color: rgb(48, 48, 48);
+}
+
+.productCard > div:last-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productCard > div:last-child > span {
+  margin: 0.5vmax;
+  color: tomato;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1vmax;
+}
+
+.productCard > div:last-child > .btn {
+  border-radius: 50%;
+}
+
+.productCard > div:last-child > .btn > i {
+  color: white;
+}
+
+.productCard:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+  transform: translateY(-0.5vmax);
+}
+
+@media (max-width: 768px) {
+  .categoryHeading {
+    padding: 30px 50px 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .homeBanner {
+    height: 55vh;
+  }
+
+  .categoryHeading {
+    padding: 20px 20px 0px;
+  }
+
+  .homeHeading {
+    font-size: 1.6rem;
+  }
+
+  .categoryHeading > .Btn {
+    width: auto;
+    height: 30px;
+    line-height: 0.3;
+  }
+
+  .productCard > p {
+    font-size: 1.7vmax;
+  }
+
+  .productCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+
+  .productCard > span {
+    font-size: 1.5vmax;
+  }
+
+  .productCard > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Roboto";
+  }
+}

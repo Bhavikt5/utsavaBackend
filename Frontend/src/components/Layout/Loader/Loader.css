@@ -1,0 +1,29 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+
+.loadingImg {
+  width: auto;
+  height: 40px;
+  position: absolute;
+}
+
+.spinner {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #edb6f8 94%, #0000) top/9px 9px
+      no-repeat,
+    conic-gradient(#0000 30%, #b847ff);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+  animation: spinner-c7wet2 1s infinite linear;
+}
+
+@keyframes spinner-c7wet2 {
+  100% {
+    transform: rotate(1turn);
+  }
+}

@@ -1,0 +1,336 @@
+.header {
+  text-transform: capitalize;
+}
+
+.banner {
+  text-align: center;
+  padding: 17px;
+  background-color: rgba(141, 68, 173, 1);
+  height: 52px;
+}
+
+.banner p {
+  color: aliceblue;
+  font-size: 14px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+  background-color: white;
+  height: 80px;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.mid-nav {
+  width: 70%;
+  font-family: "roboto";
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav li {
+  margin: 0 20px;
+}
+
+.nav li a {
+  color: #888888;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  color: #b1b1b1;
+}
+
+.right_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right_nav button {
+  background: none;
+  outline: none;
+  border: none;
+  text-align: center;
+}
+
+.right_nav i {
+  font-size: 15px;
+  color: #888888;
+  cursor: pointer;
+}
+
+.signInBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #888888;
+  margin: 0 30px;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.signInBtn span {
+  font-size: 15px;
+  margin-left: 5px;
+  padding: 10px 0;
+}
+
+.signInBtn:hover .signInBtnUl {
+  display: inherit;
+}
+
+.toggle {
+  display: none;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.navbar.active {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  -webkit-box-shadow: 2px 4px 5px 0px rgba(161, 153, 161, 1);
+  -moz-box-shadow: 2px 4px 5px 0px rgba(161, 153, 161, 1);
+  box-shadow: 2px 4px 5px 0px rgba(161, 153, 161, 1);
+}
+
+.speedDialIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.signInBtnUl {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 10px 0;
+  top: 60px;
+  right: 100px;
+  z-index: 19;
+}
+
+.signInBtnUl > li {
+  padding: 0 20px;
+  line-height: 2;
+}
+
+.signInBtn > li > a {
+  font-size: 1.5rem;
+  color: #888888;
+}
+
+.signInBtnUl > .signInA > a {
+  text-decoration: none;
+  color: #888888;
+}
+
+.signInA:hover {
+  background-color: rgb(228, 228, 228);
+}
+
+.cartValue {
+  width: 25px;
+  margin-left: 5px;
+  font-size: 14px;
+  color: #ee1818;
+  text-align: center;
+  border-radius: 30%;
+}
+
+/* Search  */
+
+.searchBoxMain {
+  position: absolute;
+  top: 90px;
+  z-index: 9999;
+  left: 40%;
+  background-color: #bbbaba;
+  padding: 0 10px;
+  border-radius: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.1s ease;
+}
+
+.searchBoxMain > .searchBox1 > input {
+  width: 300px;
+  padding: 6px 12px;
+  border: none;
+  outline: none;
+  font-family: "Roboto";
+  border-radius: 5px;
+}
+
+#showSearch {
+  display: none;
+}
+
+#showSearch:checked ~ .searchBoxMain {
+  max-height: 100%;
+}
+
+/* .LoginSignUpContainer {
+  height: 0;
+}
+
+#showForm:checked ~ .LoginSignUpContainer {
+  min-height: 70vh;
+} */
+
+@media (max-width: 1083px) {
+  .header .navbar {
+    padding: 20px;
+  }
+
+  .navbar .mid-nav li {
+    margin: 10px;
+  }
+
+  .signInBtn {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner p {
+    font-size: 10px;
+  }
+  .header .navbar {
+    justify-content: space-between;
+    height: auto;
+    padding: 10px;
+  }
+
+  .mid-nav {
+    width: auto;
+  }
+
+  ul.nav {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    position: absolute;
+    padding: 100px 0;
+    display: block;
+    list-style: none;
+    box-shadow: rgba(50, 50, 93, 0.23) 0 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
+    left: 0;
+    top: 0;
+    width: 70%;
+    height: 100vh;
+    background-color: white;
+    z-index: 888;
+    transition: 0.2s linear;
+  }
+
+  .nav-links-mobile li {
+    height: 42px;
+  }
+
+  .nav-links-mobile li a {
+    color: #888888;
+    font-size: 14px;
+    padding-left: 45px;
+    text-decoration: none;
+  }
+
+  .logo {
+    margin-left: 30px;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  .signInBtn {
+    margin: 0 10px;
+  }
+
+  .speedDialIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .signInBtnUl {
+    right: 5%;
+  }
+
+  .cartBtn {
+    padding-top: 5px;
+    margin-right: 10px;
+  }
+
+  .open,
+  .close {
+    color: #888888;
+    display: block;
+    font-size: 25px;
+    z-index: 9999;
+  }
+
+  .toggle {
+    border: none;
+    background-color: transparent;
+    display: inherit;
+  }
+
+  .close {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transition: none;
+  }
+
+  .close.home-btn {
+    color: #888888;
+    border-radius: 50%;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+
+  /* search  */
+  .searchBoxMain {
+    position: absolute;
+    top: 90px;
+    left: 30px;
+    background-color: #bbbaba;
+    padding: 0 10px;
+    border-radius: 5px;
+  }
+
+  .searchBoxMain > .searchBox1 > input {
+    width: 200px;
+    padding: 6px 12px;
+    border: none;
+    outline: none;
+    font-family: "Roboto";
+  }
+
+  /* form  */
+  /* #showForm:checked ~ .LoginSignUpContainer {
+    min-height: 100vh;
+  } */
+}

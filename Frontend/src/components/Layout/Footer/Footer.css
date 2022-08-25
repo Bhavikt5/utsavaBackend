@@ -1,0 +1,94 @@
+.footer .box-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer .box-container .box {
+  padding: 1rem 0;
+  flex: 1 1 20rem;
+}
+
+.img {
+  padding-left: 30px;
+}
+.img a img {
+  width: 200px;
+  height: auto;
+}
+
+.footer .box-container .box h3 {
+  font-size: 1.5rem;
+  color: rgb(70, 70, 70);
+}
+
+.footer .box-container .box p {
+  font-size: 1rem;
+  color: #666;
+  padding: 0.7rem 0;
+}
+
+.footer .box-container .box .links {
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .box-container .box .link .links {
+  margin: 10px;
+}
+
+.categories {
+  text-align: center;
+}
+
+.footer .box-container .box .links a {
+  display: block;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: #888888;
+  transition: 0.2s ease;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.footer .box-container .box .links a:hover {
+  transform: translateX(2px);
+  text-decoration: underline;
+  color: rgba(141, 68, 173, 1);
+}
+
+.footer .credit {
+  padding: 2.5rem 1rem;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background: rgba(141, 68, 173, 1);
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background: #888888;
+}
+
+@media (max-width: 400px) {
+  .img a img {
+    width: 130px;
+    margin-left: 40px;
+  }
+}
