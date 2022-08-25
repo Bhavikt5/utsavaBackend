@@ -9,7 +9,7 @@ const Therapy = () => {
           <h3>Meditation Therapy Courses</h3>
           <p>
             INDIVIDUAL TRANSFORMATION FOR CONTEMPORARY PEOPLE <br /> Time to
-            Turn up for Your Own Life
+            Turn up for Your Own Life.
           </p>
         </div>
         <div className="therapyContent">
