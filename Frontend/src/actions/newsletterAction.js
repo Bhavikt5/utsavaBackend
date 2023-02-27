@@ -19,6 +19,8 @@ export const subscriber = (subscriberData) => async (dispatch) => {
       config
     );
 
+    console.log("subscriberData ", subscriberData);
+
     dispatch({
       type: CREATE_SUBSCRIBER_SUCCESS,
       payload: data,

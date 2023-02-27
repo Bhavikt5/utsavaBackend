@@ -13,6 +13,7 @@ const Newsletter = () => {
   const [email, setEmail] = useState("");
 
   const createSubscriber = (e) => {
+    e.preventDefault();
     const myForm = new FormData();
 
     myForm.set("name", name);
